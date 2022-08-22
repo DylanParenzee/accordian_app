@@ -1,12 +1,7 @@
 import React from "react";
 
-const Question = ({ info, title }) => {
-  return (
-    <div>
-      <h4>{title}</h4>
-      <p>{info}</p>
-    </div>
-  );
+const Question = () => {
+  return <h1>question component</h1>;
 };
 
 export default Question;

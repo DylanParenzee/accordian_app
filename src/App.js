@@ -4,27 +4,13 @@ import data from "./Data";
 import Question from "./Question";
 
 function App() {
+  const [questions, setQuestions] = useState(data);
   const [isAnswer, setIsAnswer] = useState(false);
   return (
     <main>
       <div className="container">
-        {data.map((item) => {
-          return (
-            <div className="question">
-              <section>
-                <Question key={item.id} title={item.title} info={item.info} />
-                <button
-                  onClick={() => {
-                    setIsAnswer(true);
-                  }}
-                  className="btn"
-                >
-                  +
-                </button>
-              </section>
-            </div>
-          );
-        })}
+        <h3>Questions and Answers</h3>
+        <section className="info"></section>
       </div>
     </main>
   );
