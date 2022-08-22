@@ -1,7 +1,7 @@
 import React from "react";
 
 const Question = () => {
-  return <h1>question component</h1>;
+  return <h3>question component</h3>;
 };
 
 export default Question;
